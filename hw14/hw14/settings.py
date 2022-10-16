@@ -11,6 +11,8 @@ BOT_NAME = 'hw14'
 
 SPIDER_MODULES = ['hw14.spiders']
 NEWSPIDER_MODULE = 'hw14.spiders'
+FEED_FORMAT = "csv"
+FEED_URI = "test.csv"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -62,9 +64,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'hw14.pipelines.Hw14Pipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'hw14.pipelines.Hw14Pipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

@@ -10,4 +10,5 @@ from itemadapter import ItemAdapter
 
 class Hw14Pipeline:
     def process_item(self, item, spider):
+        print('!----------------------------!')
         return item
