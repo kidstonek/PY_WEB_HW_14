@@ -11,9 +11,9 @@ BOT_NAME = 'hw14'
 
 SPIDER_MODULES = ['hw14.spiders']
 NEWSPIDER_MODULE = 'hw14.spiders'
-FEED_FORMAT = "csv"
-FEED_URI = "test.csv"
-
+# FEED_FORMAT = "csv"
+# FEED_URI = "test.csv"
+CONNECTION_STRING = 'sqlite:///hw14.db'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'hw14 (+http://www.yourdomain.com)'
